@@ -199,7 +199,7 @@ const fullScreenButton=this.document.getElementById("fullScreenButton");
             this.image = document.getElementById("enemyImage");
             this.frameX = 0;
             this.markedForDeletion = false;
-            this.speed = Math.random() * 5 + 8;
+            this.speed = Math.random() * 4 + 12;
             this.maxFrames = 5;
             this.fps = 20;
             this.frameTimer = 0;
@@ -241,7 +241,7 @@ const fullScreenButton=this.document.getElementById("fullScreenButton");
         if (enemyTimer > enemyInterval + randomEnemyInterval) {
             enemies.push(new Enemy(canvas.width, canvas.height));
             enemyTimer = 0;
-            randomEnemyInterval = Math.random() * 1000 + 500;
+            randomEnemyInterval = Math.random() * 500 + 500;
         } else enemyTimer += deltaTime;
 
         enemies.forEach(enemy => {
@@ -300,7 +300,7 @@ fullScreenButton.addEventListener("click", toggleFullScreen );
     const background = new Background(canvas.width, canvas.height);
     let lastTime = 0;
     let enemyTimer = 0;
-    let enemyInterval = 2000;
+    let enemyInterval = 1000;
 
     let randomEnemyInterval = Math.random() * 1000 + 500;
     function animate(timeStamp) {
