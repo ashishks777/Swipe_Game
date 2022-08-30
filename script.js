@@ -1,7 +1,7 @@
 /** @type {HTMLCanvasElement} */
 
 window.addEventListener("load", function () {
-
+this.alert("Click on Toggle Full Screen \nSwipe up to jump and swipe down to restartGmae \nplay in landscape mode for better experience\n for pc  use arrow keys to move and jump  ");
 const fullScreenButton=this.document.getElementById("fullScreenButton");
 
     const canvas = this.document.getElementById("canvas1");
